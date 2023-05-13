@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    transition: .1s;
+ 
+}
+body{
+background-color: brown;
+color: white;
+}
+
+.page{
+    width: 500px;
+    /* height: 500px; */
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    color: black;
+}
+
+.page input{
+    width: 70%;
+    height: 30px;
+    margin-top: 20px;
+}
+  .page-box{
+   display:inline-table;
+    
+} 
+
+.page-box button{
+    background-color: blueviolet;
+    padding: 15px 30px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+ /* .scanner img{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+} */
+
+ .scan-img{
+    /* width: -webkit-fill-available;
+    height: -webkit-fill-available; */
+    width: 250px;
+    height: 250px;
+  /* opacity: 0;   */
+} 
+.scanner{
+     opacity: 0;   
+     transition: 0.1s;
+    /* border-style: ridge; */
+    margin: 15px 80px;
+    pointer-events:visible;
+}
+
+.container.active{
+    height: 400px;
+     
+}
+
+ .container.active .scanner{
+    opacity: 1;
+    pointer-events: auto;
+ }
+
+
+ 
